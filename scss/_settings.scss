@@ -1,0 +1,176 @@
+// Global
+$global-font-family:
+    // Safari for OS X and iOS (San Francisco)
+    -apple-system,
+    // Chrome >= 56 for OS X (San Francisco), Windows, Linux and Android
+    system-ui,
+    // Chrome < 56 for OS X (San Francisco)
+    BlinkMacSystemFont,
+    // Windows
+    "Segoe UI",
+    // Android
+    "Roboto",
+    // Basic web fallback
+    "Helvetica Neue", Arial, sans-serif !default;
+
+$global-font-size: 16px;
+$global-line-height: 1.15;
+$global-font-weight: 300;
+$text-color: #222222;
+$global-width: 1200px;
+
+$global-margin: 2rem;
+$global-padding: 2rem;
+$global-left: 1rem;
+
+$global-weight-normal: 300;
+$global-weight-bold: 700;
+
+// Colour Scheme
+$primary: #1779ba;
+$secondary: #767676;
+$success: #3adb76;
+$warning: #ffae00;
+$alert: #cc4b37;
+
+$light-gray: #e6e6e6;
+$medium-gray: #cacaca;
+$dark-gray: #8a8a8a;
+$black: #0a0a0a;
+$white: #fefefe;
+
+// Typography - null is effectively mobile
+
+$h1-font-sizes: (
+  null  : 26px,
+  tablet : 28px,
+  laptop: 48px,
+  desktop : 48px
+);
+
+$h2-font-sizes: (
+  null  : 22px,
+  tablet : 24px,
+  laptop: 30px,
+  desktop : 30px
+);
+
+$h3-font-sizes: (
+  null: 18px,
+  tablet: 20px,
+  laptop: 20px,
+  desktop: 20px
+);
+
+$h4-font-sizes: (
+  null : 16px,
+  tablet: 16px,
+  laptop: 18px,
+  desktop : 18px
+);
+
+$h5-font-sizes: (
+  null: 14px,
+  tablet: 14px,
+  laptop: 16px,
+  desktop: 16px
+);
+
+$h6-font-sizes: (
+  null  : 13px,
+  tablet : 13px,
+  laptop: 13px,
+  desktop : 13px
+);
+
+$header-font-family: $global-font-family;
+$header-font-weight: bold;
+$header-text-colour: $text-color;
+$header-line-height: 1.2;
+$header-bottom-margin: rem-calc(30);
+
+$paragraph-font-size: rem-calc(16);
+$paragraph-line-height: 1.6;
+$paragraph-margin-bottom: rem-calc(16);
+
+$hr-border: 1px solid $light-gray;
+
+$list-lineheight: $paragraph-line-height;
+$list-margin-bottom: $paragraph-margin-bottom;
+$list-style-type: disc;
+$list-style-position: outside;
+$list-side-margin: 1.25rem;
+$list-nested-side-margin: 1.25rem;
+$defnlist-margin-bottom: 1rem;
+$defnlist-term-weight: $global-weight-bold;
+$defnlist-term-margin-bottom: rem-calc(4);
+$blockquote-color: $dark-gray;
+$blockquote-padding: rem-calc(9 20 0 19);
+$blockquote-border: 1px solid $medium-gray;
+$cite-font-size: rem-calc(13);
+$cite-color: $dark-gray;
+$cite-pseudo-content: '\2014 \0020';
+$abbr-underline: 1px dotted $black;
+
+// Inputs
+$input-height: rem-calc(60);
+$input-padding: rem-calc(8);
+$input-border-color: $light-gray;
+$input-focus-color: $primary;
+$input-focus-border-color: $primary;
+
+// Buttons
+$button-padding-topbottom: 12px;
+$button-padding-leftright: 32px;
+$button-background: $primary;
+$button-font-family: $global-font-family;
+$button-font-weight: bold;
+$button-text-color: $white;
+$button-text-transform: uppercase;
+$button-letter-spacing: .2em;
+$button-font-size: rem-calc(14);
+$button-border-radius: 40px;
+$button-hollow-border: 2px solid $button-background;
+$button-hollow-text-color: $white;
+
+// Tables
+$table-striped: even;
+$table-striped-background: $light-gray;
+$table-header-background: #eeeeee;
+$table-header-padding: rem-calc(10 12 10 12);
+$table-header-weight: $global-weight-bold;
+$table-body-background: #ffffff;
+$table-body-padding: rem-calc(10 12 10 12);
+$table-body-weight: $global-weight-normal;
+$table-footer-background: #eeeeee;
+$table-footer-padding: rem-calc(10 12 10 12);
+$table-footer-weight: $global-weight-normal;
+
+// Embed
+$embed-margin-bottom: rem-calc(32);
+
+// Grid
+$desktopbreak: rem-calc(1280);
+$laptopbreak: rem-calc(1024);
+$tabletbreak: rem-calc(768);
+$phabletbreak: rem-calc(460);
+$mobilebreak: rem-calc(320);
+
+// Breakpoints
+$breakpoints: (
+	mobile-min: $mobilebreak,
+	phablet-min: $phabletbreak,
+	tablet-min: $tabletbreak,
+	laptop-min: $laptopbreak,
+	desktop-min: $desktopbreak,
+	mobile-max: $phabletbreak - 1,
+	phablet-max: $tabletbreak - 1,
+	tablet-max: $laptopbreak - 1,
+	laptop-max: $desktopbreak - 1,
+);
+
+// Grid Break
+// this is the width at which you want the flexbox grid to kick in - below this width will be single column
+
+$grid-break-point-tablet: $tabletbreak;
+$grid-break-point-desktop: $laptopbreak;

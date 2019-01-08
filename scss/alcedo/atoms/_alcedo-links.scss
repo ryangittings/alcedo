@@ -1,0 +1,18 @@
+@mixin alcedo-links {
+	a {
+		line-height: inherit;
+		color:$primary;
+
+		&:active {
+			color:$primary;
+		}
+
+		&:focus {
+			color:$primary;
+		}
+		
+		&:hover {
+			color:darken($primary, 10%);
+		}
+	}
+}
