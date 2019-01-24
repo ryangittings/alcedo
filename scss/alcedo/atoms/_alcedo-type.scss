@@ -1,7 +1,8 @@
 @mixin alcedo-type {
 	h1,h2,h3,h4,h5,h6 {
 		font-family: $header-font-family;
-		line-height: $header-line-height;
+    line-height: $header-line-height;
+    color: $header-text-color;
     margin: 0 0 $header-bottom-margin;
     font-weight: $header-font-weight;
 	}
