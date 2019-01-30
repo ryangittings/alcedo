@@ -1,5 +1,7 @@
 # Alcedo
 
+[![Build Status](https://travis-ci.org/ryangittings/alcedo.svg?branch=master)](https://travis-ci.org/ryangittings/alcedo)
+
 This is the pure Sass framework for speed and flexibility.
 
 `npm install alcedo` or `yarn add alcedo`
