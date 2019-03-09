@@ -5,7 +5,7 @@
 		border:1px solid $input-border-color;
     padding:$input-padding;
     font-family: $global-font-family;
-    line-break: $global-line-height;
+    line-height: $global-line-height;
 
 		&:hover {
 			border-color:darken($input-border-color, 20%);
