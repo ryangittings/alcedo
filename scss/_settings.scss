@@ -120,8 +120,8 @@ $input-focus-color: $primary;
 $input-focus-border-color: $primary;
 
 // Buttons
-$button-padding-topbottom: 12px;
-$button-padding-leftright: 32px;
+$button-padding-topbottom: rem-calc(16);
+$button-padding-leftright: rem-calc(32);
 $button-background: $primary;
 $button-font-family: $global-font-family;
 $button-font-weight: bold;
@@ -139,10 +139,10 @@ $table-striped-background: $light-gray;
 $table-header-background: #eeeeee;
 $table-header-padding: rem-calc(10 12 10 12);
 $table-header-weight: $global-weight-bold;
-$table-body-background: #ffffff;
+$table-body-background: $white;
 $table-body-padding: rem-calc(10 12 10 12);
 $table-body-weight: $global-weight-normal;
-$table-footer-background: #eeeeee;
+$table-footer-background: $light-gray;
 $table-footer-padding: rem-calc(10 12 10 12);
 $table-footer-weight: $global-weight-normal;
 
