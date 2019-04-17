@@ -150,27 +150,19 @@ $table-footer-weight: $global-weight-normal;
 $embed-margin-bottom: rem-calc(32);
 
 // Grid
-$desktopbreak: rem-calc(1280);
-$laptopbreak: rem-calc(1024);
-$tabletbreak: rem-calc(768);
-$phabletbreak: rem-calc(460);
-$mobilebreak: rem-calc(320);
+$smbreak: rem-calc(576);
+$mdbreak: rem-calc(768);
+$lgbreak: rem-calc(992);
+$xlbreak: rem-calc(1200);
 
 // Breakpoints
 $breakpoints: (
-	mobile-min: $mobilebreak,
-	phablet-min: $phabletbreak,
-	tablet-min: $tabletbreak,
-	laptop-min: $laptopbreak,
-	desktop-min: $desktopbreak,
-	mobile-max: $phabletbreak - 1,
-	phablet-max: $tabletbreak - 1,
-	tablet-max: $laptopbreak - 1,
-	laptop-max: $desktopbreak - 1,
+	small-min: $smbreak,
+	medium-min: $mdbreak,
+	large-min: $lgbreak,
+	xlarge-min: $xlbreak,
+	small-max: $smbreak - 1,
+	medium-max: $mdbreak - 1,
+	large-max: $lgbreak - 1,
+	xlarge-max: $xlbreak - 1,
 );
-
-// Grid Break
-// this is the width at which you want the flexbox grid to kick in - below this width will be single column
-
-$grid-break-point-tablet: $tabletbreak;
-$grid-break-point-desktop: $laptopbreak;
