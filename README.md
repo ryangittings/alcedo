@@ -62,11 +62,11 @@ The alcedo grid is flexbox based, with browser support extended through Gulp. Th
 
 ```
 <div class="row">
-  <div class="column column-m-12 column-t-6 column-d-4">
+  <div class="column column-sm-8 column-md-6 column-lg-4">
   </div>
-  <div class="column column-m-12 column-t-6 column-d-4">
+  <div class="column column-sm-8 column-md-6 column-lg-4">
   </div>
-  <div class="column column-m-12 column-t-6 column-d-4">
+  <div class="column column-sm-8 column-md-6 column-lg-4">
   </div>  
 </div>
 ```
@@ -148,7 +148,7 @@ Vertical:
 You can use column offsets to offset a column by a column amount. For example:
 
 ```
-  <div class="column-t-4 column-t-offset-1 column">
+  <div class="column-md-4 column-md-offset-1 column">
 ```
 
 This will offset the column on tablet devices by one column, increasing spacing between columns.
@@ -156,7 +156,7 @@ This will offset the column on tablet devices by one column, increasing spacing 
 ### Flex Column
 
 ```
-  <div class="column-t-4 column column--flex">
+  <div class="column-md-4 column column--flex">
 ```
 
 This will turn the column into a flex displayed column to allow for equal height divs within the columns.
