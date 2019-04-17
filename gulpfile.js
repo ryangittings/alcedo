@@ -10,9 +10,6 @@ var gulp  = require('gulp'),
 // Compile Sass, Autoprefix and minify
 gulp.task('styles', function() {
     return gulp.src(['./scss/test.scss'])
-        .pipe(plumber(function(error) {
-            this.emit('end');
-        }))
         .pipe(sourcemaps.init()) // Start Sourcemaps
         .pipe(sass())
         .pipe(autoprefixer({

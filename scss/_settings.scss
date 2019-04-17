@@ -130,13 +130,11 @@ $button-text-transform: uppercase;
 $button-letter-spacing: .2em;
 $button-font-size: rem-calc(14);
 $button-border-radius: 40px;
-$button-hollow-border: 2px solid $button-background;
-$button-hollow-text-color: $white;
 
 // Tables
 $table-striped: even;
 $table-striped-background: $light-gray;
-$table-header-background: #eeeeee;
+$table-header-background: $light-gray;
 $table-header-padding: rem-calc(10 12 10 12);
 $table-header-weight: $global-weight-bold;
 $table-body-background: $white;
