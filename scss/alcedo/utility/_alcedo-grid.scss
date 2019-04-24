@@ -83,7 +83,14 @@
     &--flex {
       display: flex;
     }
-	}
+  }
+  
+  @for $i from 1 through 12 {
+    .column-#{$i} {
+      flex-basis: 100% / 12 * $i;
+      max-width: 100% / 12 * $i;	
+    } 
+  }
   
   .column-sm-offset-0 {
     @include breakpoint(small) {
