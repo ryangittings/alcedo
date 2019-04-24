@@ -125,7 +125,7 @@
   $keys: map-keys($breakpoints);
 
   @each $key, $fs-font-size in $fs-map {
-    @if $key == null {
+    @if $key == default {
       font-size: $fs-font-size;
       line-height: $header-line-height;
     } @else {

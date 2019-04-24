@@ -42,6 +42,7 @@ $white: #fefefe;
 // Typography - small is effectively mobile
 
 $h1-font-sizes: (
+  default: 26px,
   small : 26px,
   medium: 28px,
   large: 48px,
@@ -49,6 +50,7 @@ $h1-font-sizes: (
 );
 
 $h2-font-sizes: (
+  default: 22px,
   small : 22px,
   medium: 24px,
   large: 30px,
@@ -56,6 +58,7 @@ $h2-font-sizes: (
 );
 
 $h3-font-sizes: (
+  default: 18px,
   small: 18px,
   medium: 20px,
   large: 20px,
@@ -63,6 +66,7 @@ $h3-font-sizes: (
 );
 
 $h4-font-sizes: (
+  default: 16px,
   small: 16px,
   medium: 16px,
   large: 18px,
@@ -70,6 +74,7 @@ $h4-font-sizes: (
 );
 
 $h5-font-sizes: (
+  default: 14px,
   small: 14px,
   medium: 14px,
   large: 16px,
