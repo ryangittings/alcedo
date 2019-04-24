@@ -86,12 +86,12 @@
 	}
   
   .column-sm-offset-0 {
-    @media (min-width: map-get($breakpoints, 'small-max')){
+    @include breakpoint(small) {
       margin-left: 0;
     }
   }
 
-  @media (min-width: map-get($breakpoints, 'small-max')){
+  @include breakpoint(small) {
     @for $i from 1 through 12 {
       .column-sm-#{$i} {
         flex-basis: 100% / 12 * $i;
@@ -109,12 +109,12 @@
   }
   
   .column-md-offset-0 {
-    @media (min-width: map-get($breakpoints, 'medium-max')){
+    @include breakpoint(medium) {
       margin-left: 0;
     }
   }
-
-	@media (min-width: map-get($breakpoints, 'medium-max')){
+  
+  @include breakpoint(medium) {
 		@for $i from 1 through 12 {
 
 			.column-md-#{$i} {
@@ -133,12 +133,12 @@
   }
   
   .column-lg-offset-0 {
-    @media (min-width: map-get($breakpoints, 'large-max')){
+    @include breakpoint(large) {
       margin-left: 0;
     }
   }
 
-	@media (min-width: map-get($breakpoints, 'large-max')){
+  @include breakpoint(large) {
 		@for $i from 1 through 12 {
 
 			.column-lg-#{$i} {
@@ -157,12 +157,12 @@
 	}
   
   .column-xl-offset-0 {
-    @media (min-width: map-get($breakpoints, 'xlarge')){
+    @include breakpoint(xlarge) {
       margin-left: 0;
     }
   }
 
-  @media (min-width: map-get($breakpoints, 'xlarge')){
+  @include breakpoint(xlarge) {
 		@for $i from 1 through 12 {
 			.column-xl-#{$i} {
 				flex-basis: 100% / 12 * $i;

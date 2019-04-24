@@ -1,11 +1,4 @@
-/* @include css-gradient(#dfdfdf,#f8f8f8); */
-@mixin css-gradient($from: #dfdfdf, $to: #f8f8f8, $direction: to bottom) {
-  background-color: $to;
-  background-image: linear-gradient($direction, $from, $to);
-}
 
-
-// shamelessly ripped from Foundation
 @function strip-unit($num) {
   @return $num / ($num * 0 + 1);
 }
@@ -104,8 +97,8 @@
     }
   }
   // feed errors back
-  @if $point == 'desktop' and $rule == 'only' {
-    @error "You supplied 'desktop' and 'only' - there is no 'desktop-max' breakpoint."
+  @if $point == 'xlarge' and $rule == 'only' {
+    @error "You supplied 'xlarge' and 'only' - there is no 'desktop-max' breakpoint."
   }
   
   @if not $valid-rule or not $valid-point {
