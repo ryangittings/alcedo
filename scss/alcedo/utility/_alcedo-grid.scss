@@ -86,12 +86,12 @@
 	}
   
   .column-sm-offset-0 {
-    @media (min-width: map-get($breakpoints, 'small')){
+    @media (min-width: map-get($breakpoints, 'small-max')){
       margin-left: 0;
     }
   }
 
-  @media (min-width: map-get($breakpoints, 'small')){
+  @media (min-width: map-get($breakpoints, 'small-max')){
     @for $i from 1 through 12 {
       .column-sm-#{$i} {
         flex-basis: 100% / 12 * $i;
@@ -109,12 +109,12 @@
   }
   
   .column-md-offset-0 {
-    @media (min-width: map-get($breakpoints, 'medium')){
+    @media (min-width: map-get($breakpoints, 'medium-max')){
       margin-left: 0;
     }
   }
 
-	@media (min-width: map-get($breakpoints, 'medium')){
+	@media (min-width: map-get($breakpoints, 'medium-max')){
 		@for $i from 1 through 12 {
 
 			.column-md-#{$i} {
@@ -133,12 +133,12 @@
   }
   
   .column-lg-offset-0 {
-    @media (min-width: map-get($breakpoints, 'large')){
+    @media (min-width: map-get($breakpoints, 'large-max')){
       margin-left: 0;
     }
   }
 
-	@media (min-width: map-get($breakpoints, 'large')){
+	@media (min-width: map-get($breakpoints, 'large-max')){
 		@for $i from 1 through 12 {
 
 			.column-lg-#{$i} {
