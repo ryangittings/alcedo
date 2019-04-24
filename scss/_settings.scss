@@ -39,48 +39,48 @@ $dark-gray: #8a8a8a;
 $black: #0a0a0a;
 $white: #fefefe;
 
-// Typography - null is effectively mobile
+// Typography - small is effectively mobile
 
 $h1-font-sizes: (
-  null  : 26px,
-  tablet : 28px,
-  laptop: 48px,
-  desktop : 48px
+  small : 26px,
+  medium: 28px,
+  large: 48px,
+  xlarge: 48px
 );
 
 $h2-font-sizes: (
-  null  : 22px,
-  tablet : 24px,
-  laptop: 30px,
-  desktop : 30px
+  small : 22px,
+  medium: 24px,
+  large: 30px,
+  xlarge: 30px
 );
 
 $h3-font-sizes: (
-  null: 18px,
-  tablet: 20px,
-  laptop: 20px,
-  desktop: 20px
+  small: 18px,
+  medium: 20px,
+  large: 20px,
+  xlarge: 20px
 );
 
 $h4-font-sizes: (
-  null : 16px,
-  tablet: 16px,
-  laptop: 18px,
-  desktop : 18px
+  small: 16px,
+  medium: 16px,
+  large: 18px,
+  xlarge: 18px
 );
 
 $h5-font-sizes: (
-  null: 14px,
-  tablet: 14px,
-  laptop: 16px,
-  desktop: 16px
+  small: 14px,
+  medium: 14px,
+  large: 16px,
+  xlarge: 16px
 );
 
 $h6-font-sizes: (
-  null  : 13px,
-  tablet : 13px,
-  laptop: 13px,
-  desktop : 13px
+  small : 13px,
+  medium: 13px,
+  large: 13px,
+  xlarge : 13px
 );
 
 $header-font-family: $global-font-family;
