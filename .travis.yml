@@ -2,9 +2,7 @@ language: node_js
 node_js:
   - "node"
 install:
-  - npm install
+  - yarn
 notifications:
   email: false
-before_script:
-  - npm install -g gulp-cli
-script: gulp
+script: yarn styles
