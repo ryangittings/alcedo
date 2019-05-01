@@ -1,31 +1,24 @@
 // Grab our gulp packages
-var gulp  = require('gulp'),
-    sass = require('gulp-sass'),
-    cssnano = require('gulp-cssnano'),
-    plumber = require('gulp-plumber'),
-    rename = require('gulp-rename'),
-    autoprefixer = require('gulp-autoprefixer'),
-    sourcemaps = require('gulp-sourcemaps');
+import gulp from 'gulp';
+import pkg from './package.json';
+
+const $ = require('gulp-load-plugins')({
+  pattern: ['*'],
+  scope: ['devDependencies'],
+});
 
 // Compile Sass, Autoprefix and minify
 gulp.task('styles', function() {
-    return gulp.src(['./scss/test.scss'])
-        .pipe(plumber(function(error) {
-            this.emit('end');
-        }))
-        .pipe(sourcemaps.init()) // Start Sourcemaps
-        .pipe(sass())
-        .pipe(autoprefixer({
-            browsers: ['last 5 versions'],
-            cascade: false
-        }))
-        .pipe(gulp.dest('./css/'))
-        .pipe(rename({suffix: '.min'}))
-        .pipe(cssnano())
-        .pipe(sourcemaps.write('.')) // Creates sourcemaps for minified styles
-        .pipe(gulp.dest('./css/'))
+  return gulp.src(pkg.paths.src.scss + pkg.vars.scssName)
+    .pipe($.sourcemaps.init()) // Start Sourcemaps
+    .pipe($.sass({ outputStyle: 'compressed' }))
+    .pipe($.autoprefixer({
+      browsers: ['last 5 versions'],
+      cascade: false,
+    }))
+    .pipe(gulp.dest(pkg.paths.dist.css))
+    .pipe($.sourcemaps.write('.')) // Creates sourcemaps for minified styles
+    .pipe(gulp.dest(pkg.paths.dist.css));
 });
 
-gulp.task('default', function() {
-  gulp.start('styles');
-});
+gulp.task('default', gulp.series('styles'));
