@@ -1,9 +1,9 @@
+@import "mixins";
 @import "settings";
 @import "style";
 
 @include alcedo-grid;
 @include alcedo-align;
-@include alcedo-colour;
 @include alcedo-touch;
 
 @include alcedo-type;

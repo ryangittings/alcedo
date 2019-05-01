@@ -83,76 +83,107 @@
     &--flex {
       display: flex;
     }
-	}
-
-	@for $i from 1 through 12 {
-
-		.column-m-#{$i} {
-			flex-basis: 100% / 12 * $i;
-			max-width: 100% / 12 * $i;	
-		} 
-
-		.column-m-order-#{$i} {
-			order:#{$i};
-		}
-      
-    .column-m-offset-#{$i} {
-      margin-left: 100% / 12 * $i;
-    }
-
   }
   
-  .column-t-offset-0 {
-    @media (min-width:$grid-break-point-tablet){
+  @for $i from 1 through 12 {
+    .column-#{$i} {
+      flex-basis: 100% / 12 * $i;
+      max-width: 100% / 12 * $i;	
+    } 
+  }
+  
+  .column-sm-offset-0 {
+    @include breakpoint(small) {
       margin-left: 0;
     }
   }
 
-	@media (min-width:$grid-break-point-tablet){
+  @include breakpoint(small) {
+    @for $i from 1 through 12 {
+      .column-sm-#{$i} {
+        flex-basis: 100% / 12 * $i;
+        max-width: 100% / 12 * $i;	
+      } 
 
+      .column-sm-order-#{$i} {
+        order:#{$i};
+      }
+        
+      .column-sm-offset-#{$i} {
+        margin-left: 100% / 12 * $i;
+      }
+    }
+  }
+  
+  .column-md-offset-0 {
+    @include breakpoint(medium) {
+      margin-left: 0;
+    }
+  }
+  
+  @include breakpoint(medium) {
 		@for $i from 1 through 12 {
 
-			.column-t-#{$i} {
+			.column-md-#{$i} {
 				flex-basis: 100% / 12 * $i;
 				max-width: 100% / 12 * $i;
 			} 
 
-			.column-t-order-#{$i} {
+			.column-md-order-#{$i} {
 				order:#{$i};
       }	
       
-      .column-t-offset-#{$i} {
+      .column-md-offset-#{$i} {
         margin-left: 100% / 12 * $i;
       }
 		}
-
-	}
+  }
   
-  .column-d-offset-0 {
-    @media (min-width:$grid-break-point-desktop){
+  .column-lg-offset-0 {
+    @include breakpoint(large) {
       margin-left: 0;
     }
   }
 
-	@media (min-width:$grid-break-point-desktop){
-
+  @include breakpoint(large) {
 		@for $i from 1 through 12 {
 
-			.column-d-#{$i} {
+			.column-lg-#{$i} {
 				flex-basis: 100% / 12 * $i;
 				max-width: 100% / 12 * $i;
 			} 
 
-			.column-d-order-#{$i} {			
+			.column-lg-order-#{$i} {
+				order:#{$i};
+      }	
+      
+      .column-lg-offset-#{$i} {
+        margin-left: 100% / 12 * $i;
+      }
+		}
+	}
+  
+  .column-xl-offset-0 {
+    @include breakpoint(xlarge) {
+      margin-left: 0;
+    }
+  }
+
+  @include breakpoint(xlarge) {
+		@for $i from 1 through 12 {
+			.column-xl-#{$i} {
+				flex-basis: 100% / 12 * $i;
+				max-width: 100% / 12 * $i;
+			} 
+
+			.column-xl-order-#{$i} {			
 				order:#{$i};
 			}		
       
-      .column-d-offset-#{$i} {
+      .column-xl-offset-#{$i} {
         margin-left: 100% / 12 * $i;
       }
-
 		}
-		
 	}
 
 } // end mixin

@@ -39,48 +39,53 @@ $dark-gray: #8a8a8a;
 $black: #0a0a0a;
 $white: #fefefe;
 
-// Typography - null is effectively mobile
+// Typography - small is effectively mobile
 
 $h1-font-sizes: (
-  null  : 26px,
-  tablet : 28px,
-  laptop: 48px,
-  desktop : 48px
+  default: 26px,
+  small : 26px,
+  medium: 28px,
+  large: 48px,
+  xlarge: 48px
 );
 
 $h2-font-sizes: (
-  null  : 22px,
-  tablet : 24px,
-  laptop: 30px,
-  desktop : 30px
+  default: 22px,
+  small : 22px,
+  medium: 24px,
+  large: 30px,
+  xlarge: 30px
 );
 
 $h3-font-sizes: (
-  null: 18px,
-  tablet: 20px,
-  laptop: 20px,
-  desktop: 20px
+  default: 18px,
+  small: 18px,
+  medium: 20px,
+  large: 20px,
+  xlarge: 20px
 );
 
 $h4-font-sizes: (
-  null : 16px,
-  tablet: 16px,
-  laptop: 18px,
-  desktop : 18px
+  default: 16px,
+  small: 16px,
+  medium: 16px,
+  large: 18px,
+  xlarge: 18px
 );
 
 $h5-font-sizes: (
-  null: 14px,
-  tablet: 14px,
-  laptop: 16px,
-  desktop: 16px
+  default: 14px,
+  small: 14px,
+  medium: 14px,
+  large: 16px,
+  xlarge: 16px
 );
 
 $h6-font-sizes: (
-  null  : 13px,
-  tablet : 13px,
-  laptop: 13px,
-  desktop : 13px
+  small : 13px,
+  medium: 13px,
+  large: 13px,
+  xlarge : 13px
 );
 
 $header-font-family: $global-font-family;
@@ -120,8 +125,8 @@ $input-focus-color: $primary;
 $input-focus-border-color: $primary;
 
 // Buttons
-$button-padding-topbottom: 12px;
-$button-padding-leftright: 32px;
+$button-padding-topbottom: rem-calc(16);
+$button-padding-leftright: rem-calc(32);
 $button-background: $primary;
 $button-font-family: $global-font-family;
 $button-font-weight: bold;
@@ -130,19 +135,17 @@ $button-text-transform: uppercase;
 $button-letter-spacing: .2em;
 $button-font-size: rem-calc(14);
 $button-border-radius: 40px;
-$button-hollow-border: 2px solid $button-background;
-$button-hollow-text-color: $white;
 
 // Tables
 $table-striped: even;
 $table-striped-background: $light-gray;
-$table-header-background: #eeeeee;
+$table-header-background: $light-gray;
 $table-header-padding: rem-calc(10 12 10 12);
 $table-header-weight: $global-weight-bold;
-$table-body-background: #ffffff;
+$table-body-background: $white;
 $table-body-padding: rem-calc(10 12 10 12);
 $table-body-weight: $global-weight-normal;
-$table-footer-background: #eeeeee;
+$table-footer-background: $light-gray;
 $table-footer-padding: rem-calc(10 12 10 12);
 $table-footer-weight: $global-weight-normal;
 
@@ -150,27 +153,19 @@ $table-footer-weight: $global-weight-normal;
 $embed-margin-bottom: rem-calc(32);
 
 // Grid
-$desktopbreak: rem-calc(1280);
-$laptopbreak: rem-calc(1024);
-$tabletbreak: rem-calc(768);
-$phabletbreak: rem-calc(460);
-$mobilebreak: rem-calc(320);
+$smbreak: rem-calc(576);
+$mdbreak: rem-calc(768);
+$lgbreak: rem-calc(992);
+$xlbreak: rem-calc(1200);
 
 // Breakpoints
 $breakpoints: (
-	mobile-min: $mobilebreak,
-	phablet-min: $phabletbreak,
-	tablet-min: $tabletbreak,
-	laptop-min: $laptopbreak,
-	desktop-min: $desktopbreak,
-	mobile-max: $phabletbreak - 1,
-	phablet-max: $tabletbreak - 1,
-	tablet-max: $laptopbreak - 1,
-	laptop-max: $desktopbreak - 1,
+	small-min: $smbreak,
+	medium-min: $mdbreak,
+	large-min: $lgbreak,
+	xlarge-min: $xlbreak,
+	small-max: $smbreak - 1,
+	medium-max: $mdbreak - 1,
+	large-max: $lgbreak - 1,
+	xlarge-max: $xlbreak - 1,
 );
-
-// Grid Break
-// this is the width at which you want the flexbox grid to kick in - below this width will be single column
-
-$grid-break-point-tablet: $tabletbreak;
-$grid-break-point-desktop: $laptopbreak;
