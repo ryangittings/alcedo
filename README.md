@@ -42,7 +42,7 @@ Get started
 
 - Get started by tweaking the settings in settings.scss
 - You can remove or add the mixins in the style.scss file to only include what you need.
-- alcedo has a 12 column grid with column classes for mobile, tablet and desktop, with the breakpoints of these controllable seperate to your media queries (though using the mqs by default).
+- alcedo has a 12 column grid with column classes for small, medium and large and extra-large, with the breakpoints of these controllable seperate to your media queries (though using the mqs by default).
 
 ### Getting Started With Gulp
 - Run `npm update --save-dev` to update package.json dependencies to the latest and download the latest node modules.
@@ -60,6 +60,8 @@ The alcedo grid is flexbox based, with browser support extended through Gulp. Th
 
 ### Mark-up
 
+To use the grid as mapped out in settings, you can do the following:
+
 ```
 <div class="row">
   <div class="column column-sm-8 column-md-6 column-lg-4">
@@ -71,7 +73,15 @@ The alcedo grid is flexbox based, with browser support extended through Gulp. Th
 </div>
 ```
 
-Although the class names suggest "m" mobile, "t" tablet and "d" desktop, you should approach the use of the grid in a device agnostic manner.
+### Breakpoints
+
+To use breakpoints in SASS, you could do the following:
+
+`@include breakpoint(medium)`, this would target any screens larger than your `$mdbreak` breakpoint.
+
+Or, if you wanted to target screens smaller than breakpoint, you could do:
+
+`@include breakpoint(medium, max)`
 
 ### CSS Grid
 
@@ -151,9 +161,9 @@ You can use column offsets to offset a column by a column amount. For example:
   <div class="column-md-4 column-md-offset-1 column">
 ```
 
-This will offset the column on tablet devices by one column, increasing spacing between columns.
+This will offset the column on medium devices by one column, increasing spacing between columns.
 
-### Flex Column
+### Flex Column
 
 ```
   <div class="column-md-4 column column--flex">
