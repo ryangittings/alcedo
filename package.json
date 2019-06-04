@@ -1,6 +1,6 @@
 {
   "name": "alcedo",
-  "version": "2.0.6",
+  "version": "2.0.7",
   "description": "A little Sass framework",
   "repository": {
     "type": "git",
@@ -35,15 +35,15 @@
     }
   },
   "devDependencies": {
-    "@babel/core": "^7.3.4",
-    "@babel/preset-env": "^7.3.4",
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
     "@babel/register": "^7.0.0",
-    "gulp": "^4.0.0",
+    "gulp": "^4.0.2",
     "gulp-autoprefixer": "^6.1.0",
-    "gulp-changed": "^3.2.0",
+    "gulp-changed": "^4.0.0",
     "gulp-concat": "^2.6.1",
-    "gulp-imagemin": "^5.0.3",
-    "gulp-load-plugins": "^1.5.0",
+    "gulp-imagemin": "^6.0.0",
+    "gulp-load-plugins": "^1.6.0",
     "gulp-rev": "^9.0.0",
     "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.5"

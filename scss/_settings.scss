@@ -27,17 +27,23 @@ $global-weight-normal: 300;
 $global-weight-bold: 700;
 
 // Colour Scheme
-$primary: #1779ba;
-$secondary: #767676;
+$gray-100: #f7fafc;
+$gray-200: #edf2f7;
+$gray-300: #e2e8f0;
+$gray-400: #cbd5e0;
+$gray-500: #a0aec0;
+$gray-600: #718096;
+$gray-700: #4a5568;
+$gray-800: #2d3748;
+$gray-900: #1a202c;
+$black: #0a0a0a;
+$white: #fefefe;
+
+$primary: $gray-800;
+$secondary: $gray-900;
 $success: #3adb76;
 $warning: #ffae00;
 $alert: #cc4b37;
-
-$light-gray: #e6e6e6;
-$medium-gray: #cacaca;
-$dark-gray: #8a8a8a;
-$black: #0a0a0a;
-$white: #fefefe;
 
 // Typography - small is effectively mobile
 
@@ -98,7 +104,7 @@ $paragraph-font-size: rem-calc(16);
 $paragraph-line-height: 1.6;
 $paragraph-margin-bottom: rem-calc(16);
 
-$hr-border: 1px solid $light-gray;
+$hr-border: 1px solid $gray-100;
 
 $list-lineheight: $paragraph-line-height;
 $list-margin-bottom: $paragraph-margin-bottom;
@@ -109,18 +115,18 @@ $list-nested-side-margin: 1.25rem;
 $defnlist-margin-bottom: 1rem;
 $defnlist-term-weight: $global-weight-bold;
 $defnlist-term-margin-bottom: rem-calc(4);
-$blockquote-color: $dark-gray;
+$blockquote-color: $gray-700;
 $blockquote-padding: rem-calc(9 20 0 19);
-$blockquote-border: 1px solid $medium-gray;
+$blockquote-border: 1px solid $gray-700;
 $cite-font-size: rem-calc(13);
-$cite-color: $dark-gray;
+$cite-color: $gray-700;
 $cite-pseudo-content: '\2014 \0020';
 $abbr-underline: 1px dotted $black;
 
 // Inputs
 $input-height: rem-calc(60);
 $input-padding: rem-calc(8);
-$input-border-color: $light-gray;
+$input-border-color: $gray-100;
 $input-focus-color: $primary;
 $input-focus-border-color: $primary;
 
@@ -138,14 +144,14 @@ $button-border-radius: 40px;
 
 // Tables
 $table-striped: even;
-$table-striped-background: $light-gray;
-$table-header-background: $light-gray;
+$table-striped-background: $gray-100;
+$table-header-background: $gray-100;
 $table-header-padding: rem-calc(10 12 10 12);
 $table-header-weight: $global-weight-bold;
 $table-body-background: $white;
 $table-body-padding: rem-calc(10 12 10 12);
 $table-body-weight: $global-weight-normal;
-$table-footer-background: $light-gray;
+$table-footer-background: $gray-100;
 $table-footer-padding: rem-calc(10 12 10 12);
 $table-footer-weight: $global-weight-normal;
 

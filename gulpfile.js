@@ -13,7 +13,6 @@ gulp.task('styles', function() {
     .pipe($.sourcemaps.init()) // Start Sourcemaps
     .pipe($.sass({ outputStyle: 'compressed' }))
     .pipe($.autoprefixer({
-      browsers: ['last 5 versions'],
       cascade: false,
     }))
     .pipe(gulp.dest(pkg.paths.dist.css))
