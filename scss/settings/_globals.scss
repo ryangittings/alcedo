@@ -1,0 +1,24 @@
+// Global
+$global-font-family:
+    // Safari for OS X and iOS (San Francisco)
+    -apple-system,
+    // Chrome >= 56 for OS X (San Francisco), Windows, Linux and Android
+    system-ui,
+    // Chrome < 56 for OS X (San Francisco)
+    BlinkMacSystemFont,
+    // Windows
+    "Segoe UI",
+    // Android
+    "Roboto",
+    // Basic web fallback
+    "Helvetica Neue", Arial, sans-serif !default;
+
+$global-font-size: 16px;
+$global-line-height: 1.15;
+$global-font-weight: 300;
+$global-text-color: #222222;
+$global-width: 1200px;
+
+$global-padding: 2rem;
+$global-weight-normal: 300;
+$global-weight-bold: 700;

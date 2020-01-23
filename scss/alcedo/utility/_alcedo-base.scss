@@ -7,14 +7,9 @@ html {
 }
 
 body {
-	color: $text-color;
+	color: $global-text-color;
 	font-size: $global-font-size;
 	font-family: $global-font-family;
 	font-weight: $global-font-weight;
 	line-height: $global-line-height;
-}
-
-img {
-	max-width:100%;
-	display:inline-block;
 }

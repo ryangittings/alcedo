@@ -1,0 +1,16 @@
+$smbreak: rem-calc(576);
+$mdbreak: rem-calc(768);
+$lgbreak: rem-calc(992);
+$xlbreak: rem-calc(1200);
+
+// Breakpoints
+$breakpoints: (
+	small-min: $smbreak,
+	medium-min: $mdbreak,
+	large-min: $lgbreak,
+	xlarge-min: $xlbreak,
+	small-max: $smbreak - 1,
+	medium-max: $mdbreak - 1,
+	large-max: $lgbreak - 1,
+	xlarge-max: $xlbreak - 1,
+);
