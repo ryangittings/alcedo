@@ -1,0 +1,58 @@
+//Type
+
+$header-font-family: 'Cormorant Garamond', serif;
+$header-font-weight: 400;
+$header-line-height: 1;
+$header-text-color: $primary-900;
+$header-bottom-margin: rem-calc(24);
+
+$h1-font-sizes: (
+  default: 26px,
+  small : 26px,
+  medium: 28px,
+  large: 48px,
+  xlarge: 48px
+);
+
+$h2-font-sizes: (
+  default: 36px,
+  small : 36px,
+  medium: 48px,
+  large: 64px,
+  xlarge: 64px
+);
+
+$h3-font-sizes: (
+  default: 18px,
+  small: 18px,
+  medium: 20px,
+  large: 20px,
+  xlarge: 20px
+);
+
+$h4-font-sizes: (
+  default: 16px,
+  small: 16px,
+  medium: 16px,
+  large: 18px,
+  xlarge: 18px
+);
+
+$h5-font-sizes: (
+  default: 14px,
+  small: 14px,
+  medium: 14px,
+  large: 16px,
+  xlarge: 16px
+);
+
+$h6-font-sizes: (
+  small : 13px,
+  medium: 13px,
+  large: 13px,
+  xlarge : 13px
+);
+
+$paragraph-font-size: rem-calc(18);
+$paragraph-line-height: 1.5;
+$paragraph-margin-bottom: rem-calc(16);
